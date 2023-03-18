@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Teste - 002</title>
+    <style>
+        
+        body{
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.33);
+        }
+        h1{
+            font: normal 30px tahoma;
+            background: rgb(255, 196, 2);
+            color: white;
+            font-weight: bold
+        }
+        h2{
+            font: normal 20px tahoma;
+            font-weight: bold;
+        }
+        p{
+            font: normal 17px tahoma;
+        }
+    </style>
+</head>
+<body>
+        <h1>TESTE SITE 002</h1>
+        <hr color='orange' >
+        <h2>O que eu aprendi até agora foi:</h2>
+        <p>Html, css e javascript.</p>
+        
+        <input type="number" name="n1" id="txtn1"/> +
+        <input type="number" name="n2" id="txtn2"/>
+        <input type="button" value="resultado" onclick="resultado()">
+        <div id="res">resultado</div>
+    <script>
+         function resultado() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = s
+        }
+    </script>
+
+</body>
+</html>
